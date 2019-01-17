@@ -1,6 +1,115 @@
+// Colours needed for the site
+$greenish: #9ab4b3;
+$gray: #e5e5e5;
+$blue: #99bcdf;
+$white: #fff;
+$black: #000;
 
-$c: #c0c0c0;
-body {
-    background: $c;
-    color: darken($c, 14);
+// reset some browser stuff
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// basic layout - mobile base line
+.navBar {
+    position: relative;
+    top: 379px;
+    background: $white;
+    border-top: 2px solid $gray;
+    padding-top: 4px;
+    display: flex;
+    
+    &-icons {
+        text-indent: -99999px;
+        // &_search {
+
+        // }
+        // &_basket {
+
+        // }
+    }
+    &-links {
+        text-align: center;
+        flex-grow: 1;
+        font-size: .6rem;
+        color: $black;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
+
+.heroImage {
+    text-align: center;
+    background: #ffdce0;
+    img {
+        width: 375px;
+    }
+}
+
+.heroText {
+    width: 100vw;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    color: $black;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    span {
+        font-size: .9rem;
+        font-style: italic;
+        display: block;
+        width: 100vw;
+    }
+}
+
+// media querys
+
+// tablet
+@media screen and(min-width: 1024px){
+    .wrapper-top {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .navBar {
+        top: 0;
+        border-top: none;
+        border-bottom: 2px solid $gray;
+        font-size: 1rem;
+    }
+
+    .heroImage {
+        width: 512px;
+        margin: 0 20px;
+        background: none;
+        img {
+            width: auto;  
+        }
+    }
+
+    .heroText {
+        position: relative;
+        width: 512px;
+        margin: 0 20px;
+        top: 0;
+        padding-top: 200px;
+        background: $greenish;
+        color: $white;
+        font-size: 2rem;
+        &:after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 1px;
+            margin: 10px auto;
+            background: $white;
+        }
+        span {
+            font-size: 1.3rem;
+            width: 100%;
+        }
+    }
 }
