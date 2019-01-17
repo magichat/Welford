@@ -1,0 +1,25 @@
+{
+  "name": "welford",
+  "version": "1.0.0",
+  "description": "Welford Bouquet mock up",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magichat/Welford.git"
+  },
+  "author": "Neil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magichat/Welford/issues"
+  },
+  "homepage": "https://github.com/magichat/Welford#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  },
+  "dependencies": {
+    "gulp-sass": "^4.0.2"
+  }
+}
