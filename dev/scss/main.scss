@@ -152,14 +152,60 @@ $black: #000;
     }
 }
 
-
+.footer {
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+    color: $darkGray;
+    &-links {
+        color: $darkGray;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+        width: 100vw;
+        text-align: center;
+        margin-bottom: 4px;
+    }
+    &-networkWrapper {
+        width: 116px;
+        height: 32px;
+        margin: 20px auto 15px;
+    }
+    &-networks {
+        text-indent: -99999px;
+        display: block;
+        float: left;
+        width: 32px;
+        height: 32px;
+        background: $white;
+        margin: 0 5px;
+        &_twitter {
+            margin-left: 0;
+            background: url(../img/twitter.png);
+        }
+        &_facebook {
+            background: url(../img/facebook.png);
+        }
+        &_instagram {
+            background: url(../img/instagram.png);
+            margin-right: 0;
+        }
+    }
+    &-copyright {
+        width: 100%;
+        text-align: center;
+        span {
+            color: $black;
+            display: block;
+        }
+    }
+}
 
 
 // Media querys ========================================================
 
 // tablet
 @media screen and(min-width: 1024px){
-    .wrapper-top {
+    .hero {
         display: flex;
         justify-content: center;
         margin-top: 20px;
@@ -219,6 +265,19 @@ $black: #000;
         }
         &-saleItem {
             margin-right: 15px;
+        }
+    }
+
+    .footer {
+        &-linksWrapper {
+            width: 100%;
+            margin: 0 auto;
+            border-bottom: 1px solid $gray;
+        }
+        &-links {
+            display: inline-block;
+            width: 252px;
+            margin-bottom: 0;
         }
     }
 }
