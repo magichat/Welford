@@ -25,12 +25,14 @@ $black: #000;
     
     &-icons {
         text-indent: -99999px;
-        // &_search {
-
-        // }
-        // &_basket {
-
-        // }
+        width: 15px;
+        height: 15px;
+        &_search {
+            background: url(../img/search.png);
+        }
+        &_basket {
+            background: url(../img/basket.png);
+        }
     }
     &-links {
         text-align: center;
