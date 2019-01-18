@@ -42,27 +42,30 @@ $black: #000;
     }
 }
 
-.heroImage {
-    text-align: center;
-    background: #ffdce0; // image pink
-    img {
-        width: 375px;
+.hero {
+    &-image {
+        text-align: center;
+        background: #ffdce0; // image pink
+        img {
+            width: 375px;
+        }
     }
+    
+    &-text {
+        width: 100vw;
+        position: absolute;
+        top: 36px;
+        left: 0;
+        color: $black;
+        text-align: center;
+        span {
+            font-size: .9rem;
+            font-style: italic;
+            display: block;
+            width: 100vw;
+        }
 }
 
-.heroText {
-    width: 100vw;
-    position: absolute;
-    top: 36px;
-    left: 0;
-    color: $black;
-    text-align: center;
-    span {
-        font-size: .9rem;
-        font-style: italic;
-        display: block;
-        width: 100vw;
-    }
 }
 
 .ctaImages {
