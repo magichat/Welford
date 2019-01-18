@@ -209,6 +209,36 @@ $black: #000;
         display: flex;
         justify-content: center;
         margin-top: 20px;
+        &-image {
+            width: 512px;
+            margin: 0 20px;
+            background: none;
+            img {
+                width: auto;  
+            }
+        }
+        &-text {
+            position: relative;
+            width: 512px;
+            margin: 0 20px;
+            top: 0;
+            padding-top: 200px;
+            background: $greenish;
+            color: $white;
+            font-size: 2rem;
+            &:after {
+                content: "";
+                display: block;
+                width: 60px;
+                height: 1px;
+                margin: 10px auto;
+                background: $white;
+            }
+            span {
+                font-size: 1.3rem;
+                width: 100%;
+            }
+        }
     }
 
     .navBar {
@@ -216,38 +246,6 @@ $black: #000;
         border-top: none;
         border-bottom: 2px solid $gray;
         font-size: 1rem;
-    }
-
-    .heroImage {
-        width: 512px;
-        margin: 0 20px;
-        background: none;
-        img {
-            width: auto;  
-        }
-    }
-
-    .heroText {
-        position: relative;
-        width: 512px;
-        margin: 0 20px;
-        top: 0;
-        padding-top: 200px;
-        background: $greenish;
-        color: $white;
-        font-size: 2rem;
-        &:after {
-            content: "";
-            display: block;
-            width: 60px;
-            height: 1px;
-            margin: 10px auto;
-            background: $white;
-        }
-        span {
-            font-size: 1.3rem;
-            width: 100%;
-        }
     }
 
     .ctaImages {
