@@ -68,6 +68,8 @@ $black: #000;
     width: 342px;
     margin: 40px auto;
     &-section {
+        height: 400px;
+        margin-bottom: 30px;
         img {
             height: 400px;
             width: 342px;
@@ -78,7 +80,7 @@ $black: #000;
         width: 300px;
         height: 100px;
         margin: 0 auto;
-        padding: 17px 0;
+        padding: 22px 0 0;
         text-align: center;
         background: $white;
         color: $gray;
@@ -91,6 +93,17 @@ $black: #000;
             text-transform: uppercase;
             margin-bottom: 10px;
         }
+    }
+}
+
+.favorites {
+    display: block;
+    text-align: center;
+    h3 {
+        text-transform: uppercase;
+    }
+    p {
+        font-style: italic;
     }
 }
 
