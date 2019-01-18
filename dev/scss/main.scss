@@ -16,8 +16,9 @@ $black: #000;
 
 // basic layout - mobile base line
 .navBar {
-    position: relative;
-    top: 379px;
+    position: absolute;
+    width: 100vw;
+    top: 358px;
     background: $white;
     border-top: 2px solid $gray;
     padding-top: 4px;
@@ -247,6 +248,7 @@ $black: #000;
     }
 
     .navBar {
+        position: relative;
         top: 0;
         border-top: none;
         border-bottom: 2px solid $gray;
