@@ -64,7 +64,38 @@ $black: #000;
     }
 }
 
-// media querys
+.ctaImages {
+    width: 342px;
+    margin: 40px auto;
+    &-section {
+        img {
+            height: 400px;
+            width: 342px;
+            object-fit: cover;
+        }
+    }
+    &-textBlock {
+        width: 300px;
+        height: 100px;
+        margin: 0 auto;
+        padding: 17px 0;
+        text-align: center;
+        background: $white;
+        color: $gray;
+        border: 1px solid $gray;
+        outline: 5px solid $white;
+        position: relative;
+        top: -130px;
+        span {
+            display: block;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+// Media querys ========================================================
 
 // tablet
 @media screen and(min-width: 1024px){
@@ -110,6 +141,14 @@ $black: #000;
         span {
             font-size: 1.3rem;
             width: 100%;
+        }
+    }
+
+    .ctaImages {
+        display: flex;
+        justify-content: center;
+        &-section {
+            margin-right: 17px;
         }
     }
 }
